@@ -65,8 +65,7 @@ app.layout = html.Div([
     #b
     html.Div([
         html.Label("Select a country: "),
-        dcc.Dropdown(id = "country-input", placeholder = "Select... ", value = wins_df["Winner"][0], options = [{"label": team,"value": team} for team in wins_df["Winner"]]),
-        #originally had no default, bit I thought that a default looked a bit better, so I set it to Argentina in the value attribute
+        dcc.Dropdown(id = "country-input", placeholder = "Select... ", options = [{"label": team,"value": team} for team in wins_df["Winner"]]),
         html.Div(id = "country-output")
     ], style = {'marginBottom': '64px'}), #needed a bit more space between the slider and dropdown menu
 
