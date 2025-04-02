@@ -54,6 +54,7 @@ c. Select a year when a World Cup was organized and view the winner and the runn
 """
 
 app = Dash()
+server = app.server
 
 app.layout = html.Div([
     html.H1(children='FIFA World Cup History Dashboard', style={'textAlign':'center'}),
